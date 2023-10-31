@@ -47,6 +47,7 @@ AWARDS_DWINELLE_145 = {
     "fa4CsVK5FO2sjFf0fiTQ",
     "qmPujuqTdvAUdIjC9IGT",
     "BBMA4JOdTXExxZ2kl6bF",
+    "lwbWvhSfVtaxIgccB9D4",
 }
 
 SESSION = requests.Session()
