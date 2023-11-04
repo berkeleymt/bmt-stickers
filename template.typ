@@ -16,7 +16,7 @@
   students: ()
 ) = {
   set page(paper: "us-letter", margin: (x: 0.156in, y: 0.5in))
-  set text(font: "SF Pro Display", hyphenate: true, lang: "en")
+  set text(hyphenate: true, lang: "en")
   show par: set block(above: 1em, below: 1em)
   show heading: set block(above: 1em, below: 1em)
 
