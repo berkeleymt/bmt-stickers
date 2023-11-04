@@ -50,6 +50,33 @@ AWARDS_DWINELLE_145 = {
     "lwbWvhSfVtaxIgccB9D4",
 }
 
+GUTS_ROOMS = {
+    "Power Room: Dwinelle 109": "Dwinelle 155",
+    "Power Room: Dwinelle 130": "Dwinelle 155",
+    "Power Room: Dwinelle 179": "Dwinelle 155",
+    "Power Room: Dwinelle 182": "Dwinelle 155",
+    "Power Room: Dwinelle 183": "Dwinelle 155",
+    "Power Room: Dwinelle 187": "Dwinelle 155",
+    "Power Room: Dwinelle 205": "Dwinelle 155",
+    "Power Room: Dwinelle 206": "Dwinelle 155",
+    "Power Room: Dwinelle 255": "Dwinelle 145",
+    "Power Room: Dwinelle 258": "Dwinelle 145",
+    "Power Room: Dwinelle 259": "Dwinelle 145",
+    "Power Room: Dwinelle 262": "Dwinelle 145",
+    "Power Room: Dwinelle 263": "Dwinelle 145",
+    "Power Room: Dwinelle 283": "Dwinelle 145",
+    "Power Room: Dwinelle 79": "Dwinelle 155",
+    "Power Room: Dwinelle 83": "Dwinelle 155",
+    "Power Room: Dwinelle 87": "Dwinelle 155",
+    "Power Room: Dwinelle 89": "Dwinelle 155",
+    "Power Room: SOCS 136": "Hearst Field Annex A1",
+    "Power Room: SOCS 151": "Hearst Field Annex A1",
+    "Power Room: SOCS 155": "Hearst Field Annex A1",
+    "Power Room: SOCS 174": "Hearst Field Annex A1",
+    "Power Room: SOCS 175": "Hearst Field Annex A1",
+    "Power Room: SOCS 185": "Hearst Field Annex A1",
+}
+
 SESSION = requests.Session()
 SESSION.headers = {"Authorization": f"Bearer {os.environ['CONTESTDOJO_API_KEY']}"}
 
@@ -79,7 +106,7 @@ def make_sheet(number):
         team_name=team_data["name"],
         team_number=team_data["number"],
         power_room=team_data["checkInPool"],
-        guts_room="TBD",
+        guts_room=GUTS_ROOMS[team_data["checkInPool"]],
         awards_room="Dwinelle 145" if org_data["id"] in AWARDS_DWINELLE_145 else "Dwinelle 155",
         students=f"({students})",
     )
