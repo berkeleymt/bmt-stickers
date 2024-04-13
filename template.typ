@@ -39,6 +39,8 @@
       = #student.name
 
       #text(size: 1.2em)[
+        #show "Bret Harte Middle School Math Team": "Bret Harte Middle School"
+        #show "John F Kennedy Math Club": "John F Kennedy"
         Organization #dotdotdot _#(org)_ \
         Team         #dotdotdot _#(team)_ (ID: #number) \
         Exam Room    #dotdotdot _#(rooms.exam)_ \
@@ -74,34 +76,33 @@
   ..args,
 )
 
-// #sheets(
-//   sheet(
-//     org: "Moor High School",
-//     team: "Black",
-//     number: "102",
-//     rooms: (exam: "Dwinelle 100", awards: "Dwinelle 145"),
-//     students: (
-//       (name: "Moor Xu", number: "102A"),
-//       (name: "Andrew Liu", number: "102B"),
-//       (name: "Oliver Ni", number: "102C"),
-//       (name: "Brian Su", number: "102D"),
-//       (name: "Danielle Murphy", number: "102E"),
-//     )
-//   ),
-//   sheet(
-//     org: "Moor High School",
-//     team: "Black",
-//     number: "102",
-//     rooms: (exam: "Dwinelle 100", awards: "Dwinelle 145"),
-//     students: (
-//       (name: "Danielle Murphy", number: "102E"),
-//       (name: "Brian Su", number: "102D"),
-//       (name: "Oliver Ni", number: "102C"),
-//       (name: "Andrew Liu", number: "102B"),
-//       (name: "Moor Xu", number: "102A"),
+// #wrapper(
+//   sheets(
+//     sheet(
+//       org: "Youth Euclid Association-Spice",
+//       team: "Youth Euclid Association-Spice",
+//       number: "102",
+//       rooms: (exam: "Dwinelle 100", awards: "Dwinelle 145"),
+//       students: (
+//         (name: "Moor Xu", number: "102A"),
+//         (name: "Andrew Liu", number: "102B"),
+//         (name: "Oliver Ni", number: "102C"),
+//         (name: "Brian Su", number: "102D"),
+//         (name: "Danielle Murphy", number: "102E"),
+//       )
+//     ),
+//     sheet(
+//       org: "Moor High School",
+//       team: "Black",
+//       number: "102",
+//       rooms: (exam: "Dwinelle 100", awards: "Dwinelle 145"),
+//       students: (
+//         (name: "Danielle Murphy", number: "102E"),
+//         (name: "Brian Su", number: "102D"),
+//         (name: "Oliver Ni", number: "102C"),
+//         (name: "Andrew Liu", number: "102B"),
+//         (name: "Moor Xu", number: "102A"),
+//       )
 //     )
 //   )
 // )
-
-
-
