@@ -23,9 +23,9 @@ sheet(
 """
 
 AWARDS = {
-    ("A", "C"): "Dwinelle 145",
-    ("C", "Re"): "Dwinelle 155",
-    ("Re", "Z"): "Hearst Field Annex A1",
+    ("a", "c"): "Dwinelle 145",
+    ("c", "re"): "Dwinelle 155",
+    ("re", "z"): "Hearst Field Annex A1",
 }
 
 SESSION = requests.Session()
@@ -60,7 +60,7 @@ def make_sheet(number):
     )
 
     for (s, e), awards_room in AWARDS.items():
-        if s <= org_data["name"] <= e:
+        if s <= org_data["name"].casefold() <= e:
             break
 
     return SHEET.format(
